@@ -40,7 +40,6 @@
             this.SelfPickUp = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.deleteButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxDelivery = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxReceiver = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,13 +48,14 @@
             this.textBoxQuantity = new System.Windows.Forms.TextBox();
             this.checkBoxSelfPickUp = new System.Windows.Forms.CheckBox();
             this.editButton = new System.Windows.Forms.Button();
+            this.textBoxDelivery = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // addButton
             // 
             this.addButton.BackColor = System.Drawing.Color.White;
-            this.addButton.Location = new System.Drawing.Point(697, 415);
+            this.addButton.Location = new System.Drawing.Point(748, 415);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
             this.addButton.TabIndex = 1;
@@ -158,7 +158,7 @@
             // deleteButton
             // 
             this.deleteButton.BackColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(859, 415);
+            this.deleteButton.Location = new System.Drawing.Point(910, 415);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 3;
@@ -170,24 +170,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(177, 392);
+            this.label2.Location = new System.Drawing.Point(138, 392);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "Delivery";
             // 
-            // textBoxDelivery
-            // 
-            this.textBoxDelivery.Location = new System.Drawing.Point(228, 389);
-            this.textBoxDelivery.Name = "textBoxDelivery";
-            this.textBoxDelivery.Size = new System.Drawing.Size(147, 20);
-            this.textBoxDelivery.TabIndex = 6;
-            this.textBoxDelivery.Text = "2020-01-01";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(177, 421);
+            this.label1.Location = new System.Drawing.Point(138, 421);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 9;
@@ -195,16 +187,16 @@
             // 
             // textBoxReceiver
             // 
-            this.textBoxReceiver.Location = new System.Drawing.Point(228, 418);
+            this.textBoxReceiver.Location = new System.Drawing.Point(189, 418);
             this.textBoxReceiver.Name = "textBoxReceiver";
-            this.textBoxReceiver.Size = new System.Drawing.Size(147, 20);
+            this.textBoxReceiver.Size = new System.Drawing.Size(250, 20);
             this.textBoxReceiver.TabIndex = 8;
             this.textBoxReceiver.Text = "Chloe O Gordon";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(394, 392);
+            this.label3.Location = new System.Drawing.Point(445, 392);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 11;
@@ -212,7 +204,7 @@
             // 
             // textBoxAddress
             // 
-            this.textBoxAddress.Location = new System.Drawing.Point(445, 389);
+            this.textBoxAddress.Location = new System.Drawing.Point(496, 389);
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(489, 20);
             this.textBoxAddress.TabIndex = 10;
@@ -221,7 +213,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(394, 421);
+            this.label4.Location = new System.Drawing.Point(445, 421);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 13;
@@ -229,7 +221,7 @@
             // 
             // textBoxQuantity
             // 
-            this.textBoxQuantity.Location = new System.Drawing.Point(445, 418);
+            this.textBoxQuantity.Location = new System.Drawing.Point(496, 418);
             this.textBoxQuantity.Name = "textBoxQuantity";
             this.textBoxQuantity.Size = new System.Drawing.Size(100, 20);
             this.textBoxQuantity.TabIndex = 12;
@@ -238,7 +230,7 @@
             // checkBoxSelfPickUp
             // 
             this.checkBoxSelfPickUp.AutoSize = true;
-            this.checkBoxSelfPickUp.Location = new System.Drawing.Point(569, 421);
+            this.checkBoxSelfPickUp.Location = new System.Drawing.Point(620, 421);
             this.checkBoxSelfPickUp.Name = "checkBoxSelfPickUp";
             this.checkBoxSelfPickUp.Size = new System.Drawing.Size(79, 17);
             this.checkBoxSelfPickUp.TabIndex = 16;
@@ -248,7 +240,7 @@
             // editButton
             // 
             this.editButton.BackColor = System.Drawing.Color.White;
-            this.editButton.Location = new System.Drawing.Point(778, 415);
+            this.editButton.Location = new System.Drawing.Point(829, 415);
             this.editButton.Name = "editButton";
             this.editButton.Size = new System.Drawing.Size(75, 23);
             this.editButton.TabIndex = 17;
@@ -256,12 +248,20 @@
             this.editButton.UseVisualStyleBackColor = false;
             this.editButton.Click += new System.EventHandler(this.EditButton_Click);
             // 
+            // textBoxDelivery
+            // 
+            this.textBoxDelivery.Location = new System.Drawing.Point(189, 389);
+            this.textBoxDelivery.Name = "textBoxDelivery";
+            this.textBoxDelivery.Size = new System.Drawing.Size(250, 20);
+            this.textBoxDelivery.TabIndex = 18;
+            // 
             // OrdersManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(210)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(1129, 528);
+            this.Controls.Add(this.textBoxDelivery);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.checkBoxSelfPickUp);
             this.Controls.Add(this.label4);
@@ -271,7 +271,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxReceiver);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBoxDelivery);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.addButton);
@@ -288,7 +287,6 @@
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxDelivery;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxReceiver;
         private System.Windows.Forms.Label label3;
@@ -305,6 +303,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
         private System.Windows.Forms.DataGridViewCheckBoxColumn SelfPickUp;
+        private System.Windows.Forms.DateTimePicker textBoxDelivery;
     }
 }
 

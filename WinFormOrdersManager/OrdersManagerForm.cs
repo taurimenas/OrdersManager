@@ -79,7 +79,7 @@ namespace WinFormOrdersManager
             if (deliveryIsValid)
                 order.Delivery = delivery;
             bool quantityIsValid = int.TryParse(textBoxQuantity.Text, out int quantity);
-            if (quantityIsValid)
+            if (quantityIsValid && quantity > 1)
                 order.Quantity = quantity;
             order.Address = textBoxAddress.Text;
             order.Receiver = textBoxReceiver.Text;
