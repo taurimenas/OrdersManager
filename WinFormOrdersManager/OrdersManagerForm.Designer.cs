@@ -30,6 +30,14 @@
         {
             this.addButton = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Created = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Edited = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Delivery = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Receiver = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SelfPickUp = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.deleteButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxDelivery = new System.Windows.Forms.TextBox();
@@ -41,21 +49,13 @@
             this.textBoxQuantity = new System.Windows.Forms.TextBox();
             this.checkBoxSelfPickUp = new System.Windows.Forms.CheckBox();
             this.editButton = new System.Windows.Forms.Button();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Created = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edited = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Delivery = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Receiver = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SelfPickUp = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // addButton
             // 
             this.addButton.BackColor = System.Drawing.Color.White;
-            this.addButton.Location = new System.Drawing.Point(841, 487);
+            this.addButton.Location = new System.Drawing.Point(697, 415);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
             this.addButton.TabIndex = 1;
@@ -77,109 +77,12 @@
             this.Address,
             this.Quantity,
             this.SelfPickUp});
-            this.dataGridView.Location = new System.Drawing.Point(324, 153);
+            this.dataGridView.Location = new System.Drawing.Point(141, 85);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView.Size = new System.Drawing.Size(754, 298);
+            this.dataGridView.Size = new System.Drawing.Size(844, 298);
             this.dataGridView.TabIndex = 2;
-            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellContentClick);
-            // 
-            // deleteButton
-            // 
-            this.deleteButton.BackColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(1003, 488);
-            this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(75, 23);
-            this.deleteButton.TabIndex = 3;
-            this.deleteButton.Text = "Delete Order";
-            this.deleteButton.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.deleteButton.UseVisualStyleBackColor = false;
-            this.deleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(321, 464);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Delivery";
-            // 
-            // textBoxDelivery
-            // 
-            this.textBoxDelivery.Location = new System.Drawing.Point(372, 461);
-            this.textBoxDelivery.Name = "textBoxDelivery";
-            this.textBoxDelivery.Size = new System.Drawing.Size(147, 20);
-            this.textBoxDelivery.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(321, 493);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Receiver";
-            // 
-            // textBoxReceiver
-            // 
-            this.textBoxReceiver.Location = new System.Drawing.Point(372, 490);
-            this.textBoxReceiver.Name = "textBoxReceiver";
-            this.textBoxReceiver.Size = new System.Drawing.Size(147, 20);
-            this.textBoxReceiver.TabIndex = 8;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(538, 464);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Address";
-            // 
-            // textBoxAddress
-            // 
-            this.textBoxAddress.Location = new System.Drawing.Point(589, 461);
-            this.textBoxAddress.Name = "textBoxAddress";
-            this.textBoxAddress.Size = new System.Drawing.Size(489, 20);
-            this.textBoxAddress.TabIndex = 10;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(538, 493);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Quantity";
-            // 
-            // textBoxQuantity
-            // 
-            this.textBoxQuantity.Location = new System.Drawing.Point(589, 490);
-            this.textBoxQuantity.Name = "textBoxQuantity";
-            this.textBoxQuantity.Size = new System.Drawing.Size(100, 20);
-            this.textBoxQuantity.TabIndex = 12;
-            // 
-            // checkBoxSelfPickUp
-            // 
-            this.checkBoxSelfPickUp.AutoSize = true;
-            this.checkBoxSelfPickUp.Location = new System.Drawing.Point(713, 493);
-            this.checkBoxSelfPickUp.Name = "checkBoxSelfPickUp";
-            this.checkBoxSelfPickUp.Size = new System.Drawing.Size(79, 17);
-            this.checkBoxSelfPickUp.TabIndex = 16;
-            this.checkBoxSelfPickUp.Text = "SelfPickUp";
-            this.checkBoxSelfPickUp.UseVisualStyleBackColor = true;
-            // 
-            // editButton
-            // 
-            this.editButton.BackColor = System.Drawing.Color.White;
-            this.editButton.Location = new System.Drawing.Point(922, 487);
-            this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(75, 23);
-            this.editButton.TabIndex = 17;
-            this.editButton.Text = "Edit Order";
-            this.editButton.UseVisualStyleBackColor = false;
-            this.editButton.Click += new System.EventHandler(this.EditButton_Click);
+            this.dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellContentClick);
             // 
             // Id
             // 
@@ -189,7 +92,6 @@
             this.Id.HeaderText = "Id";
             this.Id.Name = "Id";
             this.Id.ReadOnly = true;
-            this.Id.Width = 50;
             // 
             // Created
             // 
@@ -215,7 +117,6 @@
             this.Delivery.HeaderText = "Delivery";
             this.Delivery.Name = "Delivery";
             this.Delivery.ReadOnly = true;
-            this.Delivery.Width = 70;
             // 
             // Receiver
             // 
@@ -233,7 +134,6 @@
             this.Address.HeaderText = "Address";
             this.Address.Name = "Address";
             this.Address.ReadOnly = true;
-            this.Address.Width = 150;
             // 
             // Quantity
             // 
@@ -243,7 +143,6 @@
             this.Quantity.HeaderText = "Quantity";
             this.Quantity.Name = "Quantity";
             this.Quantity.ReadOnly = true;
-            this.Quantity.Width = 70;
             // 
             // SelfPickUp
             // 
@@ -255,14 +154,114 @@
             this.SelfPickUp.ReadOnly = true;
             this.SelfPickUp.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.SelfPickUp.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.SelfPickUp.Width = 70;
+            // 
+            // deleteButton
+            // 
+            this.deleteButton.BackColor = System.Drawing.Color.White;
+            this.deleteButton.Location = new System.Drawing.Point(859, 415);
+            this.deleteButton.Name = "deleteButton";
+            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.TabIndex = 3;
+            this.deleteButton.Text = "Delete Order";
+            this.deleteButton.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.deleteButton.UseVisualStyleBackColor = false;
+            this.deleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(177, 392);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Delivery";
+            // 
+            // textBoxDelivery
+            // 
+            this.textBoxDelivery.Location = new System.Drawing.Point(228, 389);
+            this.textBoxDelivery.Name = "textBoxDelivery";
+            this.textBoxDelivery.Size = new System.Drawing.Size(147, 20);
+            this.textBoxDelivery.TabIndex = 6;
+            this.textBoxDelivery.Text = "2020-01-01";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(177, 421);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Receiver";
+            // 
+            // textBoxReceiver
+            // 
+            this.textBoxReceiver.Location = new System.Drawing.Point(228, 418);
+            this.textBoxReceiver.Name = "textBoxReceiver";
+            this.textBoxReceiver.Size = new System.Drawing.Size(147, 20);
+            this.textBoxReceiver.TabIndex = 8;
+            this.textBoxReceiver.Text = "Chloe O Gordon";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(394, 392);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Address";
+            // 
+            // textBoxAddress
+            // 
+            this.textBoxAddress.Location = new System.Drawing.Point(445, 389);
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(489, 20);
+            this.textBoxAddress.TabIndex = 10;
+            this.textBoxAddress.Text = "DRUMNADROCHIT, 122  Crescent Avenue";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(394, 421);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Quantity";
+            // 
+            // textBoxQuantity
+            // 
+            this.textBoxQuantity.Location = new System.Drawing.Point(445, 418);
+            this.textBoxQuantity.Name = "textBoxQuantity";
+            this.textBoxQuantity.Size = new System.Drawing.Size(100, 20);
+            this.textBoxQuantity.TabIndex = 12;
+            this.textBoxQuantity.Text = "1";
+            // 
+            // checkBoxSelfPickUp
+            // 
+            this.checkBoxSelfPickUp.AutoSize = true;
+            this.checkBoxSelfPickUp.Location = new System.Drawing.Point(569, 421);
+            this.checkBoxSelfPickUp.Name = "checkBoxSelfPickUp";
+            this.checkBoxSelfPickUp.Size = new System.Drawing.Size(79, 17);
+            this.checkBoxSelfPickUp.TabIndex = 16;
+            this.checkBoxSelfPickUp.Text = "SelfPickUp";
+            this.checkBoxSelfPickUp.UseVisualStyleBackColor = true;
+            // 
+            // editButton
+            // 
+            this.editButton.BackColor = System.Drawing.Color.White;
+            this.editButton.Location = new System.Drawing.Point(778, 415);
+            this.editButton.Name = "editButton";
+            this.editButton.Size = new System.Drawing.Size(75, 23);
+            this.editButton.TabIndex = 17;
+            this.editButton.Text = "Edit Order";
+            this.editButton.UseVisualStyleBackColor = false;
+            this.editButton.Click += new System.EventHandler(this.EditButton_Click);
             // 
             // OrdersManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(210)))), ((int)(((byte)(245)))));
-            this.ClientSize = new System.Drawing.Size(1262, 660);
+            this.ClientSize = new System.Drawing.Size(1129, 528);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.checkBoxSelfPickUp);
             this.Controls.Add(this.label4);
@@ -277,7 +276,7 @@
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.addButton);
             this.Name = "OrdersManagerForm";
-            this.Text = "Form1";
+            this.Text = "Orders Manager";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -299,7 +298,7 @@
         private System.Windows.Forms.CheckBox checkBoxSelfPickUp;
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Created;
+        private new System.Windows.Forms.DataGridViewTextBoxColumn Created;
         private System.Windows.Forms.DataGridViewTextBoxColumn Edited;
         private System.Windows.Forms.DataGridViewTextBoxColumn Delivery;
         private System.Windows.Forms.DataGridViewTextBoxColumn Receiver;

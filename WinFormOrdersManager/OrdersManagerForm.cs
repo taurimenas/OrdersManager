@@ -64,7 +64,7 @@ namespace WinFormOrdersManager
 
 
 
-        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             var selectedOrder = GetSelectedOrder();
             textBoxDelivery.Text = selectedOrder.Delivery.ToString();
